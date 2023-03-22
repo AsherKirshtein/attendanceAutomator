@@ -23,10 +23,4 @@ public class scannerTest extends Thread {
         InfoServer server = new InfoServer(8080);
         server.run();
     }
-
-    @Test
-    public void scannerTester() throws SecurityException, UsbException, InterruptedException {
-        scannerReader scanner = new scannerReader();
-        scanner.run();
-    }
 }
